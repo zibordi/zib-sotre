@@ -1,3 +1,2 @@
 Isso é um arquivo de teste;
-Essa é uma alteração para testar o git;
 esse é um segundo teste
