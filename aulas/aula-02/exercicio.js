@@ -1,0 +1,23 @@
+const args = process.argv
+    .slice(2)
+    .map(arg => arg.split('='))
+    .reduce((args, [value, key]) => {
+        args[value] = key;
+        return args;
+    }, {});
+
+sum = () => {
+    const result = Number(args.value1) + Number(args.value2);
+
+    console.log(`Resultado Soma: ${result}`);
+}
+
+sum();
+
+/*ToDo 
+sub
+mul
+div
+
+subir pro GIT INDIVIDUALMENTE 
+*/
