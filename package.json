@@ -1,0 +1,21 @@
+{
+  "name": "travel-details-svr",
+  "version": "1.0.0",
+  "description": "Travel Details Server",
+  "main": "index.js",
+  "scripts": {
+    "my-script": "node logMessage.js message='JSONFile_Message'"
+  },
+  "keywords": [
+    "react",
+    "javascript",
+    "api",
+    "webservice",
+    "json"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shortid": "2.2.14"
+  }
+}

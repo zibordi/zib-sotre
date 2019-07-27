@@ -1,0 +1,10 @@
+# Criar arquivo sem nome no Windows
+1. Abra o Explorer
+2. Botão direito em um espaço vazio
+3. Novo arquivo texto
+4. Nome o arquivo do seguinte modo: .extensão.
+
+OU 
+
+1. Abra o VS Code e clique no primeiro icone na frente do nome do projeto
+2. Coloque  .extensão
