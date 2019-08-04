@@ -20,6 +20,14 @@ sub = () => {
     console.log(`Resultado Subtração: ${result}`);
 }
 sub();
+
+mul = () => {
+    const result = Number(args.value1) * Number(args.value2);
+
+    console.log(`Resultado Subtração: ${result}`);
+}
+mul();
+
 /*ToDo 
 sub
 mul
