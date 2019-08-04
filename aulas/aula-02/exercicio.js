@@ -14,6 +14,12 @@ sum = () => {
 
 sum();
 
+sub = () => {
+    const result = Number(args.value1) - Number(args.value2);
+
+    console.log(`Resultado Subtração: ${result}`);
+}
+sub();
 /*ToDo 
 sub
 mul
