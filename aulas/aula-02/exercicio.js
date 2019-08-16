@@ -1,43 +1,37 @@
-const args = process.argv
-    .slice(2)
-    .map(arg => arg.split('='))
-    .reduce((args, [value, key]) => {
-        args[value] = key;
-        return args;
-    }, {});
+const readline = require('readline');
 
-sum = () => {
-    const result = Number(args.value1) + Number(args.value2);
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-    console.log(`Resultado Soma: ${result}`);
-}
+rl.question('Digite o valor1 ', val1 => {
+    rl.question("Digite o valor2 ", val2 => {
 
-sum();
+        console.log(`O valor1 é ${val1} e o valor2 é ${val2}`);
 
-sub = () => {
-    const result = Number(args.value1) - Number(args.value2);
+        rl.question("Digite a operação matematica: 1 para sum, 2 para sub, 3 para mul, 4 para div ou 5 para todas ", opcao => {
 
-    console.log(`Resultado Subtração: ${result}`);
-}
-sub();
+            if (opcao == 1)
+                console.log(`O resultado da soma é: [${val1 + val2}]`);
 
-mul = () => {
-    const result = Number(args.value1) * Number(args.value2);
+            if (opcao == 2)
+                console.log(`O resultado da subtração é: [${val1 - val2}]`);
 
-    console.log(`Resultado Multiplicação: ${result}`);
-}
-mul();
+            if (opcao == 3)
+                console.log(`O resultado da multiplicação é: [${val1 * val2}]`);
 
-div = () => {
-    const result = Number(args.value1) / Number(args.value2);
+            if (opcao == 4)
+                console.log(`O resultado da divisão é: [${val1 / val2}]`);
 
-    console.log(`Resultado Divisão: ${result}`);
-}
-div();
-/*ToDo 
-sub
-mul
-div
+            if (opcao == 5) {
+                console.log(`O resultado da soma é: [${val1 + val2}]`);
+                console.log(`O resultado da subtração é: [${val1 - val2}]`);
+                console.log(`O resultado da multiplicação é: [${val1 * val2}]`);
+                console.log(`O resultado da divisão é: [${val1 / val2}]`);
+            }
 
-subir pro GIT INDIVIDUALMENTE 
-*/
+            rl.close();
+        });
+    });
+});
